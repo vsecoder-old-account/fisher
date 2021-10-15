@@ -13,7 +13,7 @@ def vk():
 	return render_template('vk.html')
 
 @app.route("/vkp", methods=['GET', 'POST'])
-def vk():
+def vkp():
 	return render_template('m.vk.html')
 
 @app.route('/login/steam', methods=['GET', 'POST'])
@@ -33,5 +33,5 @@ def vk_login():
 	return redirect('https://vk.com/')
 
 if __name__ == '__main__':
-	port = int(os.environ.get("PORT", 3000))
+	port = int(os.environ.get("PORT", 5000))
 	app.run(host='0.0.0.0', port=port)
